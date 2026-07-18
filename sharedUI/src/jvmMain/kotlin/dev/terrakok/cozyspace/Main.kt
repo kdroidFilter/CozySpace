@@ -32,7 +32,7 @@ fun NucleusApplicationScope.DesktopApp(trayApp: Boolean) {
                 Item("Quit") { exitApplication() }
             }
         ) {
-            App(isSystemInDarkMode())
+            App(isSystemInDarkMode(), inPopup = true)
         }
     } else {
         DecoratedWindow(
